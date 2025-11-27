@@ -18,32 +18,32 @@
         
         header {
             position: fixed; top: 0; left: 0; width: 100%;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            background: linear-gradient(135deg, #2e2a04 0%, #2e2a04 100%);
             padding: 15px 50px; display: flex; justify-content: space-between; align-items: center;
             z-index: 1000; transition: all 0.3s ease;
         }
         header.scrolled { background: rgba(255,255,255,0.95); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #fff; }
-        header.scrolled .logo { color: #ff758f; }
+        header.scrolled .logo { color: #0a1922; }
         nav ul { list-style: none; display: flex; }
         nav ul li { margin-left: 25px; }
         nav ul li a { color: #fff; font-weight: 700; text-decoration: none; }
         header.scrolled nav ul li a { color: #333; }
         
         #hero { 
-            height: 100vh; background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            height: 100vh; background: linear-gradient(135deg, #c7991d 0%, #ac2b08 100%);
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             text-align: center; color: white; padding: 0 20px;
         }
         #hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 10px; }
         #hero p { font-size: 1.3rem; max-width: 600px; margin-bottom: 30px; }
         .btn {
-            background: #ff758f; color: white; padding: 15px 30px; border-radius: 50px;
+            background: #3f1d0733; color: white; padding: 15px 30px; border-radius: 50px;
             font-weight: 700; text-decoration: none; margin: 10px; display: inline-block;
             transition: all 0.3s ease;
         }
-        .btn:hover { transform: scale(1.05); background: #ff4d6d; }
-        .whatsapp-btn { background: #25D366 !important; }
+        .btn:hover { transform: scale(1.05); background: #c7991d; }
+        .whatsapp-btn { background: #0a923c00 !important; }
         .whatsapp-btn:hover { background: #128C7E !important; }
         
         section { padding: 80px 50px; text-align: center; }
@@ -52,7 +52,7 @@
         #contact { background: white; }
         h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; position: relative; }
         h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
-            width: 80px; height: 3px; background: #ff758f; }
+            width: 80px; height: 3px; background: #c7991d; }
         
         .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
         .product-card {
@@ -62,7 +62,7 @@
         .product-card:hover { transform: translateY(-5px); }
         .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
         .product-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
-        .price { font-size: 1.2rem; color: #ff758f; font-weight: bold; margin-bottom: 10px; }
+        .price { font-size: 1.2rem; color: #1c6e0b; font-weight: bold; margin-bottom: 10px; }
         
         .order-form { max-width: 500px; margin: 0 auto; }
         .form-group { margin-bottom: 20px; }
@@ -70,7 +70,7 @@
             width: 100%; padding: 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;
             transition: border-color 0.3s ease;
         }
-        input:focus, textarea:focus { border-color: #ff758f; outline: none; }
+        input:focus, textarea:focus { border-color: #c7991d; outline: none; }
         .form-row { display: flex; gap: 15px; }
         .form-row .form-group { flex: 1; }
         
@@ -86,8 +86,8 @@
         }
         .product-item:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         .product-item.selected { 
-            background: #25D366; color: white; 
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            background: #c7991d; color: white; 
+            box-shadow: 0 4px 15px #c7991d(37, 211, 102, 0.3);
         }
         .product-item.selected .price { color: white; }
         .product-info { display: flex; align-items: center; gap: 15px; }
@@ -117,24 +117,24 @@
         }
         .checkmark:after {
             left: 9px; top: 5px; width: 6px; height: 12px;
-            border: solid #25D366; border-width: 0 3px 3px 0;
+            border: solid #c7991d; border-width: 0 3px 3px 0;
             transform: rotate(45deg);
         }
         .product-item.selected .checkmark:after {
-            border-color: #25D366;
+            border-color: #c7991d;
         }
         
         button[type="submit"] {
-            background: #25D366; color: white; border: none; padding: 18px; border-radius: 50px;
+            background: #2e2a04; color: white; border: none; padding: 18px; border-radius: 50px;
             font-weight: 700; font-size: 1.1rem; cursor: pointer; width: 100%; transition: all 0.3s ease;
         }
-        button[type="submit"]:hover { background: #128C7E; transform: scale(1.02); }
+        button[type="submit"]:hover { background: #2e2a04; transform: scale(1.02); }
         
-        footer { background: #333; color: white; padding: 30px; text-align: center; }
+        footer { background: #2e2a04; color: white; padding: 30px; text-align: center; }
         .social-links a {
             color: white; font-size: 1.5rem; margin: 0 15px; transition: color 0.3s ease;
         }
-        .social-links a:hover { color: #ff758f; }
+        .social-links a:hover { color: #6d1104; }
         
         @media (max-width: 768px) {
             header { padding: 15px 20px; }
@@ -145,11 +145,122 @@
             .product-item { flex-direction: column; text-align: center; }
             .product-info { flex-direction: column; }
         }
+
+
+
+        /* ===== 4 WAYS TO ORDER SECTION (exactly like your flyer) ===== */
+        .ways-to-order{
+            max-width:600px;margin:30px auto;padding:50px;
+            background: wheat;
+            border-radius:30px;
+            border:3px solid var(--gold);
+            box-shadow:0 20px 60px rgba(212,175,55,0.3);
+        }
+        .ways-to-order h2{
+            font-size:4rem;
+            margin-bottom:50px;
+            color:var(--light-gold);
+        }
+        .way{
+            display:flex;align-items:center;
+            background:rgba(255,255,255,0.05);
+            margin:30px 0;
+            padding:25px 40px;
+            border-radius:25px;
+            border:2px solid transparent;
+            transition:all 0.5s;
+        }
+        .way:hover{
+            background:var(--gold);
+            color:#000;
+            transform:translateY(-15px) scale(1.03);
+            border-color:var(--light-gold);
+            box-shadow:0 20px 50px rgba(255,215,0,0.5);
+        }
+        .number{
+            font-family:'Cinzel',serif;
+            font-size:5rem;
+            margin-right:40px;
+            color:var(--gold);
+            min-width:100px;
+        }
+        .way:hover .number{color:#000;}
+        .way-text h3{font-size:2rem;margin-bottom:8px;}
+        .way-text p{font-size:1.6rem;font-weight:600;}
+
+
+
+
+
+
+
+        @media (max-width: 600px) {
+  .ways-to-order {
+    padding: 30px 20px;
+  }
+
+  .ways-to-order h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .way {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .number {
+    font-size: 3rem;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .way-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .way-text p {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  .product {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .product h3 {
+    font-size: 1.5rem;
+  }
+
+  .product p {
+    font-size: 1.2rem;
+  }
+
+  .product .price {
+    font-size: 1.4rem;
+  }
+}
+
+
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Zayn's Flavours</div>
+        <div class="logo">Flavourfix</div>
         <nav>
             <ul>
                 <li><a href="#hero">Home</a></li>
@@ -161,7 +272,7 @@
     </header>
 
     <section id="hero">
-        <h1>Zayn's Flavours</h1>
+        <h1>Flavourfix</h1>
         <p>Tasty Moment</p>
         <a href="#products" class="btn">Shop Now</a>
         <a href="https://wa.me/2348032198787?text=Hi%20Zayn's%20Flavours!%20I'm%20ready%20to%20order%20snacks" 
@@ -172,18 +283,55 @@
 
     <section id="about">
         <h2>About Us</h2>
-        <img src="zayn's logo.jpg" alt="Profile" 
+        <img src="flavourfixlogo.jpg" alt="Profile" 
              style="width: 300px; height: 300px; border-radius: 50%; margin-bottom: 20px; object-fit: cover;">
         <p>We specialize in delicious snacks that create tasty moments. From crunchy chips to sweet treats, our products are made with quality ingredients for your enjoyment.</p>
     </section>
 
+
+
+    <section class="ways-to-order">
+    <h2>4 Ways To Order From Us</h2>
+    <div class="way">
+        <div class="number">1</div>
+        <div class="way-text">
+            <h3>SEND US AN INSTAGRAM DM</h3>
+            <p>@flavourfix_ng</p>
+        </div>
+    </div>
+    <div class="way">
+        <div class="number">2</div>
+        <div class="way-text">
+            <h3>SEND US WHATSAPP MESSAGE</h3>
+            <p>08032198787, 09038809011</p>
+        </div>
+    </div>
+    <div class="way">
+        <div class="number">3</div>
+        <div class="way-text">
+            <h3>VISIT OUR WEBSITE</h3>
+            <p>flavourfix.shop</p>
+        </div>
+    </div>
+    <div class="way">
+        <div class="number">4</div>
+        <div class="way-text">
+            <h3>CALL US ON</h3>
+            <p>08032198787, 09038809011</p>
+        </div>
+    </div>
+</section>
+
+
+    <marquee style="color: black; background-color: #c7991d; font-size: 20px;">PICKUP AND DELIVERY DAILY BY     10:00am-6:00pm</marquee>
     <section id="products">
         <h2>Our Snacks</h2>
         <div class="products-grid">
             <div class="product-card">
                 <img src="chinchin.jpg" alt="Chin Chin" onerror="this.src='https://via.placeholder.com/300x200/FF9A9E/FFFFFF?text=Chin Chin'">
                 <h3>Chin Chin</h3>
-                <div class="price">₦1,000</div>
+                <div class="price">Small pack ₦1,500</div>
+                 <div class="price">Medium pack ₦3,000</div>
             </div>
             <div class="product-card">
                 <img src="potato chips.jpg" alt="Potato Chips" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=Potato Chips'">
@@ -191,37 +339,110 @@
                 <div class="price">₦1,000</div>
             </div>
             <div class="product-card">
-                <img src="Aya.jpg" alt="Aya" onerror="this.src='https://via.placeholder.com/300x200/FF9A9E/FFFFFF?text=Aya'">
-                <h3>Aya</h3>
-                <div class="price">₦500</div>
-            </div>
-            <div class="product-card">
-                <img src="https://source.unsplash.com/300x200/?plantainchips" alt="Plantain Chips" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=Plantain Chips'">
-                <h3>Plantain Chips</h3>
-                <div class="price">₦1,000</div>
-            </div>
-            <div class="product-card">
                 <img src="peanut.jpg" alt="Peanut" onerror="this.src='https://via.placeholder.com/300x200/FF9A9E/FFFFFF?text=Peanut'">
                 <h3>Peanut</h3>
                 <div class="price">₦500</div>
             </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Danbun Nama</h2>
+        <div class="products-grid">
             <div class="product-card">
-                <img src="halaka kobo.jpg" alt="Halaka Kobo" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=Halaka Kobo'">
-                <h3>Halaka Kobo</h3>
-                <div class="price">₦1,000</div>
-            </div>
-            <div class="product-card">
-                <img src="calender.jpg" alt="calender" onerror="this.src='https://via.placeholder.com/300x200/FF9A9E/FFFFFF?text=calender'">
-                <h3>Calender</h3>
-                <div class="price">₦2,000</div>
-            </div>
-            <div class="product-card">
-                <img src="yogofura.jpg" alt="yogofura" onerror="this.src='https://via.placeholder.com/300x200/FF9A9E/FFFFFF?text=yogofura'">
-                <h3>Yogofura</h3>
-                <div class="price">₦1,500</div>
+                <img src="danbum nama.jpeg" alt="danbum" onerror="this.src='https://via.placeholder.com/300x200/FF9A9E/FFFFFF?text=danbum nama'">
+                <h3>Danbun Nama</h3>
+                <div class="price">Medium pack ₦2,000</div>
+                <div class="price">Large pack ₦3,500</div>
             </div>
         </div>
     </section>
+
+
+    <section id="products">
+        <h2>Drinks</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="yogofura.jpg" alt="yogofura" onerror="this.src='https://via.placeholder.com/300x200/FF9A9E/FFFFFF?text=yogofura'">
+                <h3>Yogo-Fura</h3>
+                <div class="price">Small Bottle ₦1,500</div>
+                <div class="price">Big Bottle ₦3,000</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="products">
+        <h2>Candies</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="halaka kobo.jpg" alt="Halaka Kobo" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=Halaka Kobo'">
+                <h3>Hallaka Kobo</h3>
+                <div class="price">Small Pack ₦1,000</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,500</div>
+            </div>
+            <div class="product-card">
+                <img src="alawan madara.jpeg" alt="alawan madara" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=alawan madara'">
+                <h3>Alawan Madara</h3>
+                <div class="price">Small Pack ₦1,000</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,500</div>
+            </div>
+            <div class="product-card">
+                <img src="Aya.jpg" alt="Aya" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=Aya'">
+                <h3>Aya</h3>
+                <div class="price">Small Pack ₦1,000</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,500</div>
+            </div>
+            <div class="product-card">
+                <img src="Ridi.jpg" alt="Ridi" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=Ridi'">
+                <h3>Ridi</h3>
+                <div class="price">Small Pack ₦1,000</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,500</div>
+            </div>
+            <div class="product-card">
+                <img src="Kwakwumety.jpg" alt="Kwakwumety" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=Kwakwumety'">
+                <h3>Kwakumeti</h3>
+                <div class="price">Small Pack ₦1,000</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,000</div>
+            </div>
+            <div class="product-card">
+                <img src="tsami gaye.jpeg" alt="tsami gaye" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=tsami gaye'">
+                <h3>Tsami Gaye</h3>
+                <div class="price">Small Pack ₦1,000</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,000</div>
+            </div>
+            <div class="product-card">
+                <img src="calender.jpg" alt="calender" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=calender'">
+                <h3>Kalanda</h3>
+                <div class="price">Small Pack ₦500</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,500</div>
+            </div>
+            <div class="product-card">
+                <img src="illoka.jpg" alt="illoka" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=illoka'">
+                <h3>illoka</h3>
+                <div class="price">Small Pack ₦1,000</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,500</div>
+            </div>
+            <div class="product-card">
+                <img src="gullisuwa.jpeg" alt="gullisuwa" onerror="this.src='https://via.placeholder.com/300x200/FAD0C4/FFFFFF?text=gullisuwa'">
+                <h3>Gullisuwa</h3>
+                <div class="price">Small Pack ₦1,000</div>
+                <div class="price">Medium Pack ₦2,000</div>
+                <div class="price">Large Pack ₦3,500</div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <section id="contact">
         <h2>Place Your Order</h2>
@@ -247,7 +468,7 @@
                             <img src="chinchin.jpg" alt="Chin Chin" onerror="this.src='https://via.placeholder.com/60x60/FF9A9E/FFFFFF?text=Chin Chin'">
                             <div class="product-details">
                                 <h4>Chin Chin</h4>
-                                <div class="price">₦1,000</div>
+                                <div class="price">Small ₦1,500 </br> Medium  ₦3,000</div>
                             </div>
                         </div>
                         <div class="checkbox-container">
@@ -261,7 +482,7 @@
                             <img src="potato chips.jpg" alt="Potato Chips" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Potato Chips'">
                             <div class="product-details">
                                 <h4>Potato Chips</h4>
-                                <div class="price">₦1,000</div>
+                                <div class="price">Small ₦1,000</div>
                             </div>
                         </div>
                         <div class="checkbox-container">
@@ -270,31 +491,17 @@
                         </div>
                     </div>
                     
-                    <div class="product-item" data-product="Aya - ₦500" data-price="500">
+                    <div class="product-item" data-product="Aya - ₦1,000" data-price="1,000">
                         <div class="product-info">
                             <img src="Aya.jpg" alt="Aya" onerror="this.src='https://via.placeholder.com/60x60/FF9A9E/FFFFFF?text=Aya'">
                             <div class="product-details">
                                 <h4>Aya</h4>
-                                <div class="price">₦500</div>
+                                <div class="price">Small ₦1,000 </br> Medium  ₦2,000 </br> Large ₦3,500</div>
                             </div>
                         </div>
                         <div class="checkbox-container">
                             <input type="checkbox" id="aya">
                             <label for="aya" class="checkmark"></label>
-                        </div>
-                    </div>
-                    
-                    <div class="product-item" data-product="Plantain Chips - ₦1,000" data-price="1000">
-                        <div class="product-info">
-                            <img src="https://source.unsplash.com/300x200/?plantainchips" alt="Plantain Chips" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Plantain Chips'">
-                            <div class="product-details">
-                                <h4>Plantain Chips</h4>
-                                <div class="price">₦1,000</div>
-                            </div>
-                        </div>
-                        <div class="checkbox-container">
-                            <input type="checkbox" id="plantainchips">
-                            <label for="plantainchips" class="checkmark"></label>
                         </div>
                     </div>
                     
@@ -316,9 +523,8 @@
                         <div class="product-info">
                             <img src="halaka kobo.jpg" alt="Halaka Kobo" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
                             <div class="product-details">
-                                <h4>Halaka Ko
-                                    bo</h4>
-                                <div class="price">₦1,000</div>
+                                <h4>Hallaka Kobo</h4>
+                                <div class="price">Small ₦1,000 </br> Medium ₦2,000 </br> Large ₦3,500</div>
                             </div>
                         </div>
                         <div class="checkbox-container">
@@ -326,32 +532,130 @@
                             <label for="halaka" class="checkmark"></label>
                         </div>
                     </div>
-                    
-                    <div class="product-item" data-product="Calender - ₦2,000" data-price="2000">
+
+                    <div class="product-item" data-product="Halaka Kobo - ₦1,000" data-price="1000">
                         <div class="product-info">
-                            <img src="calender.jpg" alt="calender" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Calender'">
+                            <img src="danbum nama.jpeg" alt="Danbun" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
                             <div class="product-details">
-                                <h4>Calender</h4>
-                                <div class="price">₦2,000</div>
+                                <h4>Danbun Nama</h4>
+                                <div class="price">Medium ₦2,000 </br> Large ₦3,500 </div>
                             </div>
                         </div>
                         <div class="checkbox-container">
-                            <input type="checkbox" id="calender">
-                            <label for="calender" class="checkmark"></label>
+                            <input type="checkbox" id="Danbun">
+                            <label for="Danbun" class="checkmark"></label>
                         </div>
                     </div>
 
-                    <div class="product-item" data-product="Yogofura - ₦1,500" data-price="1500">
+                    <div class="product-item" data-product="yogofura - ₦1,500" data-price="1500">
                         <div class="product-info">
-                            <img src="yogofura.jpg" alt="Yogofura" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Yogofura'">
+                            <img src="yogofura.jpg" alt="yogofura" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
                             <div class="product-details">
-                                <h4>Yogofura</h4></h4>
-                                <div class="price">₦1,500</div>
+                                <h4>Yogo-Fura</h4>
+                                <div class="price">small ₦1,500 </br> Big ₦3,000 </div>
                             </div>
                         </div>
                         <div class="checkbox-container">
-                            <input type="checkbox" id="yogofua">
+                            <input type="checkbox" id="yogofura">
                             <label for="yogofura" class="checkmark"></label>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product="Alawan - ₦1,000" data-price="1000">
+                        <div class="product-info">
+                            <img src="alawan madara.jpeg" alt="alawan" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
+                            <div class="product-details">
+                                <h4>Alawan Madara</h4>
+                                <div class="price">Small ₦1,000 </br>Medium ₦2,000 </br> Large ₦3,500 </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="alawan">
+                            <label for="alawan" class="checkmark"></label>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product="Ridi - ₦1,000" data-price="1000">
+                        <div class="product-info">
+                            <img src="Ridi.jpg" alt="Ridi" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
+                            <div class="product-details">
+                                <h4>Ridi</h4>
+                                <div class="price">Small ₦1,000 </br>Medium ₦2,000 </br> Large ₦3,500 </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="Ridi">
+                            <label for="Ridi" class="checkmark"></label>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product="Kwakumeti - ₦1,000" data-price="1000">
+                        <div class="product-info">
+                            <img src="Kwakwumety.jpg" alt="Kwakumeti" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
+                            <div class="product-details">
+                                <h4>Kwakumeti</h4>
+                                <div class="price">Small ₦1,000 </br>Medium ₦2,000 </br> Large ₦3,000 </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="Kwakumeti">
+                            <label for="Kwakumeti" class="checkmark"></label>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product="tsami - ₦1,000" data-price="1000">
+                        <div class="product-info">
+                            <img src="tsami gaye.jpeg" alt="tsami" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
+                            <div class="product-details">
+                                <h4>Tsami Gaye</h4>
+                                <div class="price">Small ₦1,000 </br>Medium ₦2,000 </br> Large ₦3,000 </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="tsami">
+                            <label for="tsami" class="checkmark"></label>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product="Kalanda - ₦500" data-price="500">
+                        <div class="product-info">
+                            <img src="calender.jpg" alt="Kalanda" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
+                            <div class="product-details">
+                                <h4>Kalanda</h4>
+                                <div class="price">Small ₦500 </br>Medium ₦2,000 </br> Large ₦3,500 </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="Kalanda">
+                            <label for="Kalanda" class="checkmark"></label>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product="illoka - ₦1,000" data-price="1000">
+                        <div class="product-info">
+                            <img src="illoka.jpg" alt="alawan" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
+                            <div class="product-details">
+                                <h4>illoka</h4>
+                                <div class="price">Small ₦1,000 </br>Medium ₦2,000 </br> Large ₦3,500 </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="illoka">
+                            <label for="illoka" class="checkmark"></label>
+                        </div>
+                    </div>
+
+                    <div class="product-item" data-product="gullisuwa - ₦1,000" data-price="1000">
+                        <div class="product-info">
+                            <img src="gullisuwa.jpeg" alt="alawan" onerror="this.src='https://via.placeholder.com/60x60/FAD0C4/FFFFFF?text=Halaka Kobo'">
+                            <div class="product-details">
+                                <h4>Gullisuwa</h4>
+                                <div class="price">Small ₦1,000 </br>Medium ₦2,000 </br> Large ₦3,500 </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="gullisuwa">
+                            <label for="gullisuwa" class="checkmark"></label>
                         </div>
                     </div>
                 </div>
@@ -367,12 +671,12 @@
     </section>
 
     <footer>
-        <p>© 2025 Zayn's Flavours. Fast delivery across Nigeria!</p>
+        <p>© 2025 Flavourfix. Fast delivery across Nigeria!</p>
         <div class="social-links">
             <a href="https://wa.me/2348032198787?text=Hello%20Zayn's%20Flavours!%20I%20need%20help%20with%20my%20order" target="_blank">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="https://ig.me/m/zayn.ahmerd?text=Hello%20Zayn's%20Flavours!%20I%20need%20help%20with%20my%20order" target="_blank">
+            <a href="https://www.instagram.com/flavourfix_ng?igsh=MW8wbGw5cXoxOHE4cQ==" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
